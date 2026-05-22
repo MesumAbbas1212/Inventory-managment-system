@@ -1,0 +1,14 @@
+{
+  "name": "inventory-management",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "db:init": "mysql -u root < schema.sql"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.9.0",
+    "cors": "^2.8.5"
+  }
+}
