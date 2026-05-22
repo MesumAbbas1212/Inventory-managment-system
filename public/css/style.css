@@ -1,0 +1,42 @@
+#sidebar {
+  min-width: 240px;
+  min-height: 100vh;
+}
+#sidebar .nav-link {
+  padding: 0.6rem 1rem;
+  border-radius: 0;
+  transition: background 0.2s;
+}
+#sidebar .nav-link:hover, #sidebar .nav-link.active {
+  background: rgba(255,255,255,0.1);
+  color: #fff !important;
+}
+#menu-toggle {
+  cursor: pointer;
+}
+.card-dashboard {
+  transition: transform 0.2s;
+}
+.card-dashboard:hover {
+  transform: translateY(-2px);
+}
+.low-stock {
+  color: #dc3545;
+  font-weight: 600;
+}
+.badge-low-stock {
+  background: #dc3545;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  #sidebar {
+    min-width: 100%;
+    min-height: auto;
+  }
+  #sidebar.collapsed {
+    display: none;
+  }
+}
